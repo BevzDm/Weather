@@ -1,0 +1,204 @@
+* {
+  transition-duration: 400ms;
+}
+
+.weatherIcon {
+  width: 90px;
+  height: 125px;
+  margin-top: 47px;
+  margin-left: 86px;
+  cursor: pointer;
+}
+
+.cf {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 26px;
+  width: 80px;
+  height: 33px;
+  margin-top: -775px;
+  margin-left: 900px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(0.5692583918571472px);
+  box-shadow: 2px 2px 8px rgba(61, 61, 61, 0.111);
+  cursor: pointer;
+}
+
+.c {
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.f {
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.changeTemp {
+  position: relative;
+  top: -32px;
+  left: 900px;
+  width: 40px;
+  height: 33px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(0.5692583918571472px);
+  cursor: pointer;
+  transition-duration: 800ms;
+}
+
+.temperature {
+  margin-top: 10px;
+  margin-left: 80px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 164px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 120%;
+  text-shadow: -4px 2px 4px rgba(61, 61, 61, 0.553);
+}
+
+.cel {
+  color: white;
+  position: relative;
+  top: -157px;
+  left: 250px;
+  font-size: 30px;
+  text-shadow: -4px 2px 2.5px rgba(29, 27, 27, 0.475);
+  transition-duration: 300ms;
+}
+
+.data {
+  margin-top: -20px;
+  margin-left: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  width: 230px;
+  height: 68px;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.th {
+  position: relative;
+  font-size: 20px;
+  margin-left: -3px;
+}
+
+.time {
+  margin-top: 10px;
+  margin-left: 80px;
+  display: flex;
+  color: #fff;
+  width: 220px;
+  height: 28px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.params {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 80px;
+  color: #fff;
+  text-shadow: -1.3983862400054932px 2.09757924079895px 0.6991931200027466px 0px rgba(0, 0, 0, 0.1);
+  font-family: Overpass;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 45px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
+  width: 110px;
+  height: 200px;
+  border-radius: 11.385px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(0.5692583918571472px);
+  box-shadow: 2px 2px 8px rgba(61, 61, 61, 0.111);
+  cursor: pointer;
+}
+
+.cardTemp {
+  display: flex;
+  align-items: end;
+  margin-bottom: 25px;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1.1385167837142944px 1.7077752351760864px 0.5692583918571472px 0px rgba(0, 0, 0, 0.1);
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: none;
+}
+
+.cardImg {
+  width: 100px;
+  height: 50px;
+  filter: none;
+}
+
+.cardTime {
+  justify-self: center;
+  align-self: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1.1385167837142944px 1.7077752351760864px 0.5692583918571472px 0px rgba(0, 0, 0, 0.1);
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: none;
+}
+
+.prev {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.next {
+  color: wheat;
+  font-size: 60px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.selectCity {
+  margin-top: -68px;
+  margin-left: 1000px;
+  width: 109px;
+  height: 42px;
+  background-color: rgba(98, 98, 98, 0.6);
+  color: rgba(255, 75, 75, 0.651);
+  cursor: pointer;
+  display: none;
+}
+
+.selectCityInfo {
+  font-size: 20px;
+}

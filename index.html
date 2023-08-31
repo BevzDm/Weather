@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WeatherApp</title>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtxwIYs8cDwRyTsPGauZqjw0f3MObNJ3s&libraries=places"></script>
+
+	<link rel="shortcut icon" href="./img/iconWeb.svg" type="image/png">
+	<link rel='stylesheet' href='./left.css'>
+	<link rel='stylesheet' href='./right.css'>
+	<link rel='stylesheet' href='./style.null.css'>
+</head>
+
+<body>
+	<div class="main">
+		<div class="leftContent">
+			<img src="./img/dayClearImg.svg" class='weatherIcon' alt="">
+			<h1 class='temperature'>27</h1> <span class='cel'>° C </span>
+			<h1 class='data'><span class='dayHTML'>17</span><span class='th'>th</span><span class='monthHTML'>June</span><span
+					class='yearHTML'>2023</span>
+			</h1>
+			<h1 class='time'>Tuesday <span>|</span> <span class='hoursHTML'>00</span><span class='minutesHTML'>00</span></h1>
+			<h1 class='params'>Wind <span class='windSpeed'>10</span> deg <span>|</span> Hum <span class='hum'>54</span>%
+				<span>|</span><span class='descrHTML'>Sunny</span>
+			</h1>
+			<div class="offer__slider-wrapper">
+				<div class="cards">
+					<a class='prev'>&#8249;</a>
+					<div class="card">
+						<h1 class='cardTemp'><span id='cardTemp1'>27</span> ° C </h1>
+						<img src="./img/dayClearImg.svg" class='cardImg' id='cardImg1' alt="">
+						<h1 class='cardTime'><span id='cardTime1'>9</span>:00</h1>
+					</div>
+					<div class="card">
+						<h1 class='cardTemp'><span id='cardTemp2'>27</span> ° C</h1>
+						<img src="./img/dayClearImg.svg" class='cardImg' id='cardImg2' alt="">
+						<h1 class='cardTime'><span id='cardTime2'>12</span>:00</h1>
+					</div>
+					<div class="card">
+						<h1 class='cardTemp'><span id='cardTemp3'>27</span> ° C</h1>
+						<img src="./img/dayClearImg.svg" class='cardImg' id='cardImg3' alt="">
+						<h1 class='cardTime'><span id='cardTime3'>15</span>:00</h1>
+					</div>
+					<div class="card">
+						<h1 class='cardTemp'><span id='cardTemp4'>27</span> ° C</h1>
+						<img src="./img/dayClearImg.svg" class='cardImg' id='cardImg4' alt="">
+						<h1 class='cardTime'><span id='cardTime4'>18</span>:00</h1>
+					</div>
+					<a class='next'>&#8250;</a>
+				</div>
+			</div>
+			<div class="cf">
+				<h1 class='c'>C</h1>
+				<h1 class='f'>F</h1>
+			</div>
+			<div class="changeTemp"></div>
+			<div class="selectCity">
+				<h1 class="selectCityInfo">Please, choose a city</h1>
+			</div>
+		</div>
+	</div>
+	<div class="rightContent">
+		<img src="./img/geo.png" class='geo' alt="">
+		<h1 class='city'>New York</h1>
+		<div class="err" id='error'>
+			<h3>Invalid City Name</h3>
+		</div>
+		<div class="search expanded">
+			<img src="./img/searchImg.svg" class='searchImg' alt="">
+		</div>
+		<input class='searchInput'>
+		<h1 class='sunrise'>Sunrise</h1>
+		<h1 class='timeNow'>Time Now</h1>
+		<h1 class='sunset'>Sunset</h1>
+		<div class="timeTable1">
+			<h1 class='from'><span class='sunriseHoursHTML'>11</span> : <span class='sunriseMinutesHTML'>24</span></h1>
+		</div>
+		<div class="times1">
+			<div class='hourLine'></div>
+			<div class='minuteLine'></div>
+			<div class='secondLine'></div>
+		</div>
+		<div class="timeTable2">
+			<h1 class='from'><span class='sunsetHoursHTML'>11</span> : <span class='sunsetMinutesHTML'>24</span></h1>
+		</div>
+		<div class="times2">
+			<div class='hourLine2'></div>
+			<div class='minuteLine2'></div>
+			<div class='secondLine2'></div>
+		</div>
+		<div class="goldenHour">
+			<div class="timeTable3">
+				<h1 class='from'><span id='hoursNowHTML'>7</span> : <span id='minutesNowHTML'>21</span></h1>
+			</div>
+			<div class="times3">
+				<div class='hourLine3'></div>
+				<div class='minuteLine3'></div>
+				<div class='secondLine3'></div>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="info">
+			<h1 class='infoText'>i</h1>
+			<div class="tooltip-content">This is current information due to state</div>
+		</div>
+		<div class="wrapper">
+			<div class="right">
+				<h1 class="quality">Wind Speed</h1>
+				<div class="indicator"></div>
+				<div class="hoverQuality">
+					<h1 class="windSpeedHTML">5</h1>
+					<h1 class="index" id='indexWind'>Moderate</h1>
+				</div>
+			</div>
+			<div class="circle"></div>
+			<div class="right">
+				<h1 class="quality">Pressure</h1>
+				<div class="indicator"></div>
+				<div class="hoverQuality">
+					<h1 class="pressureHTML">7</h1>
+					<h1 class="index" id='indexPressure'>High</h1>
+				</div>
+			</div>
+			<div class="circle"></div>
+		</div>
+		<div class="pointAir"></div>
+		<div class="pointUV"></div>
+	</div>
+	<script type="module" src="./script.js"></script>
+	<script type='module' src='./getGeolocation.js'></script>
+	<script type='module' src='./changeColorTheme.js'></script>
+	<script type='module' src='./checkWeather.js'></script>
+	<script type='module' src='./changeIcons.js'></script>
+	<script type='module' src='./convertMonth.js'></script>
+	<script type='module' src='./windController.js'></script>
+	<script type='module' src='./geocode.js'></script>
+</body>
+
+</html>
