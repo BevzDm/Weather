@@ -1,6 +1,6 @@
 import changeColorTheme from './changeColorTheme.js';
-import { changeCardIfo, changeCardImg, iter } from './changeIcons.js';
-import { checkMyWeather, checkWeather, setMyUrl, setUrl, typeOfWeather } from './checkWeather.js';
+import {changeCardIfo, changeCardImg, iter} from './changeIcons.js';
+import {checkMyWeather, checkWeather, setMyUrl, setUrl, typeOfWeather} from './checkWeather.js';
 
 const temperature = document.querySelector('.temperature');
 const cityHtml = document.querySelector('.city');
@@ -78,29 +78,18 @@ let i = 0;
 changeTemp.addEventListener('click', () => {
   if (error.style.display === 'none') {
     if (i % 2 === 0) {
-      if (+temperature.innerHTML >= 38) {
-        setUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
-        setMyUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
-        typeOfWeather ? checkWeather(searchInput.value) : checkMyWeather();
-        cel.style.left = '330px';
-        cel.innerHTML = '° F';
-        changeTemp.style.left = '940px';
-        i++;
-      } else {
-        setUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
-        setMyUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
-        typeOfWeather ? checkWeather(searchInput.value) : checkMyWeather();
-        cel.innerHTML = '° F';
-        changeTemp.style.left = '940px';
-        i++;
-      }
+      setUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
+      setMyUrl(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=`);
+      typeOfWeather ? checkWeather(searchInput.value) : checkMyWeather();
+      cel.innerHTML = '° F';
+      changeTemp.style.left = '106vh';
+      i++;
     } else if (i % 2 !== 0) {
       setUrl(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=`);
       setMyUrl(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=`);
       typeOfWeather ? checkWeather(searchInput.value) : checkMyWeather();
-      cel.style.left = '240px';
       cel.innerHTML = '° C';
-      changeTemp.style.left = '900px';
+      changeTemp.style.left = '101.5vh';
       i++;
     }
   } else {

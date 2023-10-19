@@ -9,7 +9,7 @@ const hoursNowHTML = document.getElementById('hoursNowHTML');
 const minutesNowHTML = document.getElementById('minutesNowHTML');
 
 const changeColorTheme = async () => {
-  const { lat, lon } = await getGeolocation();
+  const {lat, lon} = await getGeolocation();
   const myRes = await fetch(myUrl + `&lat=${lat}&lon=${lon}&appid=${key}`);
   const myData = await myRes.json();
 
