@@ -1,8 +1,8 @@
 .rightContent {
   position: absolute;
-  top: 0px;
+  top: 0%;
   left: 63.4%;
-  width: 650px;
+  width: 36.5%;
   height: 100%;
   background: linear-gradient(300deg, rgba(196, 196, 196, 0.153) 60%, rgba(255, 255, 255, 0.356) 100%);
   border-left: 2px solid rgba(255, 255, 255, 0.258);
@@ -11,35 +11,35 @@
 
 .geo {
   display: block;
-  margin-top: 50px;
-  margin-left: 60px;
-  width: 46px;
-  height: 44px;
+  margin-top: 5vh;
+  margin-left: 6vh;
+  width: 5vh;
+  height: 5vh;
   color: white;
   cursor: pointer;
 }
 
 .city {
   color: white;
-  margin-top: -35px;
-  margin-left: 144px;
+  margin-top: -4vh;
+  margin-left: 15vh;
 }
 
 .err {
   display: none;
   color: rgba(142, 0, 0, 0.836);
-  margin-top: -30px;
-  margin-left: 120px;
+  margin-top: -3vh;
+  margin-left: 12vh;
 }
 
 .search {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -45px;
-  margin-left: 542px;
-  width: 60px;
-  height: 60px;
+  margin-top: -5vh;
+  margin-left: 62vh;
+  width: 7vh;
+  height: 7vh;
   border-radius: 20px;
   background: linear-gradient(290deg, rgba(196, 196, 196, 0.571) 30%, rgba(255, 255, 255, 0.679) 100%);
   filter: blur(0.5692583918571472px);
@@ -49,25 +49,24 @@
 
 .search.expanded .searchInput {
   width: 82%;
-  margin-left: 40px;
+  margin-left: 4vh;
 }
 
 .searchImg {
   display: block;
-  width: 33px;
-  height: 33px;
-  margin: 8px;
-  transition-duration: 400ms;
+  width: 4vh;
+  height: 4vh;
+  margin: 1vh;
 }
 
 .searchInput {
   color: rgb(255, 255, 255);
-  width: 536px;
-  height: 37px;
+  width: 53vh;
+  height: 4vh;
   display: block;
-  margin-top: -48px;
-  margin-left: 39px;
-  font-size: 30px;
+  margin-top: -5.5vh;
+  margin-left: 4vh;
+  font-size: 2rem;
   background: none;
   transition-duration: 400ms;
   display: none;
@@ -75,20 +74,20 @@
 
 .sunrise {
   color: white;
-  margin-top: 130px;
-  margin-left: 70px;
+  margin-top: 15vh;
+  margin-left: 7.5vh;
 }
 
 .sunset {
   color: white;
-  margin-top: 13px;
-  margin-left: 490px;
+  margin-top: 1.7vh;
+  margin-left: 55vh;
 }
 
 .timeNow {
   color: white;
-  margin-top: -80px;
-  margin-left: 255px;
+  margin-top: -8vh;
+  margin-left: 29vh;
 }
 
 .timeTable1 {

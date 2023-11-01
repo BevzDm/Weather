@@ -32,7 +32,7 @@ const changeColorTheme = async () => {
   } else if (hour >= 12 && hour < 18) {
     body.style.background = 'linear-gradient(30deg, #A8C8ED 0%, #7673DC 100%)';
   } else if (hour >= 18 && hour < 21) {
-    body.style.background = 'linear-gradient(30deg, #AAC0FF 0%, #8C6BAE 100%)';
+    body.style.background = 'linear-gradient(30deg, #AAC0FF 0%, #8C6BAD 100%)';
   } else if (hour >= 21 && hour < 23) {
     body.style.background = 'linear-gradient(30deg, #48355B 0%, #8C6EAB 100%)';
   } else if (hour >= 23 || hour < 5) {
