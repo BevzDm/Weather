@@ -1,4 +1,4 @@
-import { typeOfWeather } from './checkWeather.js';
+import {typeOfWeather} from './checkWeather.js';
 import getGeolocation from './getGeolocation.js';
 
 const city = document.querySelector('.searchInput');
@@ -12,12 +12,12 @@ async function geocodeCity() {
       const cityName = city.value;
       const geocoder = new google.maps.Geocoder();
 
-      geocoder.geocode({ address: cityName }, function (results, status) {
+      geocoder.geocode({address: cityName}, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
           const location = results[0].geometry.location;
           const lat = location.lat();
           const lon = location.lng();
-          resolve({ lat, lon });
+          resolve({lat, lon});
         } else {
           cityHtml.style.display = 'none';
           geo.style.display = 'none';
@@ -31,8 +31,8 @@ async function geocodeCity() {
     });
   } else {
     try {
-      const { lat, lon } = await getGeolocation();
-      return { lat, lon };
+      const {lat, lon} = await getGeolocation();
+      return {lat, lon};
     } catch (error) {
       cityHtml.style.display = 'none';
       geo.style.display = 'none';

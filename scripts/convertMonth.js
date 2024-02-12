@@ -5,7 +5,7 @@ const key = 'f3cace81170293dcde048cbbea49900f';
 const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
 
 const convertMonth = async (city) => {
-  const { lat, lon } = await getGeolocation();
+  const {lat, lon} = await getGeolocation();
   const res = await fetch(url + (city ? city + `&appid=${key}` : `&lat=${lat}&lon=${lon}&appid=${key}`));
   const data = await res.json();
   const timestamp = data.dt;

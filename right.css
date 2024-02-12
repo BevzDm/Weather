@@ -280,7 +280,7 @@
   z-index: 1;
   margin-right: 80px;
   margin-top: 120px;
-  backdrop-filter: blur(10px); /* Эффект размытия для заднего фона */
+  backdrop-filter: blur(10px);
 }
 
 .info:hover .tooltip-content {
@@ -323,7 +323,7 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 300;
-  line-height: 120%; /* 33.6px */
+  line-height: 120%;
 }
 
 .circle {
@@ -383,7 +383,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid #ffffff; /* Непрозрачная граница */
+  border: 2px solid #ffffff;
   border-radius: inherit;
 }
 
@@ -404,6 +404,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid #ffffff; /* Непрозрачная граница */
+  border: 2px solid #ffffff;
   border-radius: inherit;
 }

@@ -1,4 +1,4 @@
-import { changeCardIfo, changeCardImg, changeIcons } from './changeIcons.js';
+import {changeCardIfo, changeCardImg, changeIcons} from './changeIcons.js';
 import convertMonth from './convertMonth.js';
 import getGeolocation from './getGeolocation.js';
 import windController from './windController.js';
@@ -86,12 +86,11 @@ const checkWeather = async (city) => {
       changeCardImg(dayData);
     }
   } catch (error) {
-    // Обработка ошибки
     cityHtml.style.display = 'none';
     geo.style.display = 'none';
     errorMessage.style.display = 'block';
     errorMessage.style.marginTop = '70px';
-    console.error(error); // Вы можете записать ошибку в консоль для отладки
+    console.error(error);
   }
 };
 
@@ -99,10 +98,10 @@ const checkMyWeather = async () => {
   typeOfWeather = false;
 
   try {
-    const { lat, lon } = await getGeolocation();
+    const {lat, lon} = await getGeolocation();
     const myRes = await fetch(myUrl + `&lat=${lat}&lon=${lon}&appid=${key}`);
     if (!myRes.ok) {
-      throw new Error('Не удалось получить данные о погоде на основе геолокации.'); // Выбросить ошибку, если статус ответа не ок
+      throw new Error('Не удалось получить данные о погоде на основе геолокации.');
     }
 
     const myData = await myRes.json();
@@ -158,7 +157,7 @@ const checkMyWeather = async () => {
     geo.style.display = 'none';
     errorMessage.style.display = 'block';
     errorMessage.style.marginTop = '70px';
-    console.error(error); // Вы можете записать ошибку в консоль для отладки
+    console.error(error);
   }
 };
 
@@ -170,4 +169,4 @@ function setMyUrl(newUrl) {
   myUrl = newUrl;
 }
 
-export { checkMyWeather, checkWeather, setMyUrl, setUrl, typeOfWeather };
+export {checkMyWeather, checkWeather, setMyUrl, setUrl, typeOfWeather};

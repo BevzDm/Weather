@@ -24,7 +24,7 @@ prev.addEventListener('click', () => {
     iter.decrement();
     changeCardImg(dayData);
   } else {
-    console.warn('Too low cardLoop');
+    console.warn('Too small cardLoop');
   }
 });
 
