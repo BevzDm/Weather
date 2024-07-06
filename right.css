@@ -23,6 +23,7 @@
   color: white;
   margin-top: -4vh;
   margin-left: 15vh;
+  cursor: default;
 }
 
 .err {
@@ -76,18 +77,21 @@
   color: white;
   margin-top: 15vh;
   margin-left: 7.5vh;
+  cursor: default;
 }
 
 .sunset {
   color: white;
   margin-top: 1.7vh;
   margin-left: 55vh;
+  cursor: default;
 }
 
 .timeNow {
   color: white;
   margin-top: -8vh;
   margin-left: 29vh;
+  cursor: default;
 }
 
 .timeTable1 {
@@ -324,6 +328,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
+  cursor: default;
 }
 
 .circle {
